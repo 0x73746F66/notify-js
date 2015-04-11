@@ -51,7 +51,7 @@
      * @returns string
      */
     getWindowsBadgeMetaTag: function (url, polling) { //for badge schema see: https://msdn.microsoft.com/en-us/library/ie/br212849.aspx
-      url = url || 'http://www.punters.com.au/windows-polling-icon-state.xml'; // could show when an event is in running??
+      url = url || 'https://www.domain.com/windows-polling-icon-state.xml';
       polling = polling || 30;
       return '<meta name="msapplication-badge" content="frequency='+polling+'; polling-uri='+url+'"/>';
     },
